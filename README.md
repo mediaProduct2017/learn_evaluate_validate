@@ -40,6 +40,8 @@ Testing data is used for model evaluation, and validation data is used for model
 
 Model validation is to determine hyperparameters. Some hyperparameters are not in the model, such as iteration times and learning rate for gradient descent. Some hyperparameters are in the model, but they are not continuous, such as the number of layers in neural network and the number of nodes in each layer. Therefore, they can not be simply trained in gradient descent.
 
+sklearn中有函数可以用来随机的分配training data, testing data and validation data.
+
 ## K-fold cross validation
 
 K-fold cross validation is actually used to evaluate a model or choose the best model from several models, that is, to validate a model. The model that has the smallest average validation error (or testing error) will be chosen.
